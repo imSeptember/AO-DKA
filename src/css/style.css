@@ -24,6 +24,7 @@ h4 {
 }
 
 .header {
+  height: 45px;
   background-color: #232323;
   display: flex;
 }
@@ -151,6 +152,12 @@ h4 {
 }
 .main__inner .main__right__container .main__right__container__border h4 {
   margin-bottom: 10px;
+}
+.main__inner .main__right__container p {
+  text-align: justify;
+  margin: 0 0 15px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
 }
 
 section {
