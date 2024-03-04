@@ -136,6 +136,12 @@ h4 {
   padding-right: 15px;
   flex: 1;
 }
+.main__inner .main__left__container .carousel__wrapper .carousel {
+  position: relative;
+}
+.main__inner .main__left__container .carousel__wrapper .carousel .carousel__block {
+  position: absolute;
+}
 .main__inner .main__left__container .left__container__img {
   width: 100%;
   height: auto;
