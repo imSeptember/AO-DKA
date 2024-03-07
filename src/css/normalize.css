@@ -2,6 +2,9 @@
 
 /* Document
    ========================================================================== */
+* {
+    box-sizing: border-box;
+}
 
 h1,
 h2,
@@ -10,6 +13,16 @@ h4,
 p {
     margin: 0;
     padding: 0;
+}
+
+input,
+textarea,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
 }
 
 a {
