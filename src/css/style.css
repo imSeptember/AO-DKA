@@ -606,7 +606,7 @@ footer .footer__text p {
   }
   .__active span:nth-child(1) {
     bottom: 20px;
-    top: 60% !important;
+    top: 63% !important;
     transform: translate(-50%, -50%) rotate(45deg) !important;
   }
   .__active span:nth-child(2) {
