@@ -6,3 +6,17 @@ window.addEventListener('scroll', function () {
         header.style.top = '0';
     }
 });
+
+const iconMenu = document.querySelector('.menu');
+const offScreenMenu = document.querySelector('.off__screen__menu');
+
+iconMenu.addEventListener('click', function (e) {
+    iconMenu.classList.toggle('__active');
+    offScreenMenu.classList.toggle('__active');
+    // menuBody.classList.toggle('__active');
+    // if (!popUp.classList.contains('hidden')) {
+    //     popUp.classList.toggle('hidden');
+    //     closeOverlay();
+    //     unlock();
+    // }
+});

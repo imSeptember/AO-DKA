@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/x-icon" href="/src/small__img/favicon-32x32.png">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                         853-84-83</p>
                 </a>
             </div>
-            <div class="header__contacts">
+            <div class="header__contacts responsive">
                 <a class="links geo" href="https://maps.app.goo.gl/3noguskP9FPvLfuTA" target="_blank">
                     <img class="links" src="src/small__img/geo.png" alt="Іконка геопозиції">
                     <p>м. Київ, вул.
@@ -40,6 +41,11 @@
     <main>
         <div class="section__container">
             <div class="logo__container">
+                <div class="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <img class="logo" src="/src/small__img/logo.jpg" alt="Логотип весів">
             </div>
             <div class="name">
@@ -50,7 +56,17 @@
                 ЗАПИС НА КОНСУЛЬТАЦІЮ
             </button>
         </div>
+
         <nav class="navigation">
+            <div class="off__screen__menu">
+                <ul class="off__screen__list">
+                    <li class="off__screen__link"><a href="golovna.html">ГОЛОВНА</a></li>
+                    <li class="off__screen__link"><a href="pravova.html">ПРАВОВА ДОПОМОГА</a></li>
+                    <li class="off__screen__link"><a href="korusne.html">КОРИСНЕ</a></li>
+                    <li class="off__screen__link"><a href="contacts.html">КОНТАКТИ</a></li>
+                    <!-- <li class="off__screen__link"><button>ЗАПИТ НА КОНСУЛЬТАЦІЮ</button> -->
+                </ul>
+            </div>
             <div class="nav__button">
                 <a href="golovna.html">ГОЛОВНА</a>
             </div>
@@ -66,7 +82,7 @@
         </nav>
 
 
-        <section>
+        <section class="responsive__section">
             <div class="main__inner">
                 <div class="main__left__container">
                     <img class="left__container__img" src="src/small__img/left__side.png"
