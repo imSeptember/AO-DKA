@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let formData = new FormData(form);
         let messageBody =
             'Name ' +
-            formData.username +
+            formData.get('username') +
             '<br/> Phone ' +
-            formData.tel +
+            formData.get('tel') +
             '<br/> Email ' +
-            formData.email;
+            formData.get('email');
         Email.send({
             Host: 'smtp.elasticemail.com',
             Username: 'kalenskiyvlad@gmail.com',
