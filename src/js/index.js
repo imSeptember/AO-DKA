@@ -30,20 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let formData = new FormData(form);
         let messageBody =
             'Name ' +
-            userName.value +
+            formData.username +
             '<br/> Phone ' +
-            phone.value +
+            formData.tel +
             '<br/> Email ' +
-            email.value;
-        // let messageBody =
-        //     'Name ' +
-        //     formData.username +
-        //     '<br/> Phone ' +
-        //     formData.tel +
-        //     '<br/> Email ' +
-        //     formData.email;
-        console.log(formData);
-        console.log(userName.value);
+            formData.email;
         Email.send({
             Host: 'smtp.elasticemail.com',
             Username: 'kalenskiyvlad@gmail.com',
@@ -54,13 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
             Body: messageBody,
         }).then((message) => alert(message));
 
-        // .then((message) => {
-        // if (message == 'OK') {
-        //     swal('asdasd', 'fsdfghgh', 'wert');
-        // } else {
-        //     swal('gsdfg', 'sdgfa', 'asdf');
-        // }
+        //     .then((message) => {
+        //     if (message == 'OK') {
+        //         swal('asdasd', 'fsdfghgh', 'wert');
+        //     } else {
+        //         swal('gsdfg', 'sdgfa', 'asdf');
+        //     }
         // });
+        // .then((message) => alert(message));
 
         // submitButton.classList.add('_sending');
         form.reset();
