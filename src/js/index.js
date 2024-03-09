@@ -22,26 +22,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // const submitButton = document.querySelector('.submit__button');
     form.addEventListener('submit', formSend);
+    const userName = document.getElementById('username');
+    const phone = document.getElementById('tel');
+    const email = document.getElementById('email');
 
     function formSend() {
-        const userName = document.getElementById('username');
-        const phone = document.getElementById('telephone');
-        const email = document.getElementById('email');
         let formData = new FormData(form);
-        // let messageBody =
-        //     'Name ' +
-        //     userName.value +
-        //     '<br/> Phone ' +
-        //     phone.value +
-        //     '<br/> Email ' +
-        //     email.value;
         let messageBody =
             'Name ' +
-            userName +
+            userName.value +
             '<br/> Phone ' +
-            phone +
+            phone.value +
             '<br/> Email ' +
-            email;
+            email.value;
+        // let messageBody =
+        //     'Name ' +
+        //     formData.username +
+        //     '<br/> Phone ' +
+        //     formData.tel +
+        //     '<br/> Email ' +
+        //     formData.email;
         console.log(formData);
         console.log(userName.value);
         Email.send({
