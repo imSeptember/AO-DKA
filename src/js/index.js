@@ -24,9 +24,17 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', formSend);
 
     function formSend() {
-        const userName = document.getElementById('username').value;
-        const phone = document.getElementById('telephone').value;
-        const email = document.getElementById('email').value;
+        const userName = document.getElementById('username');
+        const phone = document.getElementById('telephone');
+        const email = document.getElementById('email');
+        let formData = new FormData(form);
+        // let messageBody =
+        //     'Name ' +
+        //     userName.value +
+        //     '<br/> Phone ' +
+        //     phone.value +
+        //     '<br/> Email ' +
+        //     email.value;
         let messageBody =
             'Name ' +
             userName +
@@ -34,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
             phone +
             '<br/> Email ' +
             email;
+        console.log(formData);
+        console.log(userName.value);
         Email.send({
             Host: 'smtp.elasticemail.com',
             Username: 'kalenskiyvlad@gmail.com',
@@ -42,13 +52,16 @@ document.addEventListener('DOMContentLoaded', function () {
             From: 'kalenskiyvlad@gmail.com',
             Subject: 'Перезвонить клиенту',
             Body: messageBody,
-        }).then((message) => {
-            if (message == 'OK') {
-                swal('1', '2', '3');
-            } else {
-                swal('3', '2', '1');
-            }
-        });
+        }).then((message) => alert(message));
+
+        // .then((message) => {
+        // if (message == 'OK') {
+        //     swal('asdasd', 'fsdfghgh', 'wert');
+        // } else {
+        //     swal('gsdfg', 'sdgfa', 'asdf');
+        // }
+        // });
+
         // submitButton.classList.add('_sending');
         form.reset();
     }
