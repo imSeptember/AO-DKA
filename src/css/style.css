@@ -305,7 +305,7 @@ section {
   margin-bottom: 20px;
   border-radius: 2px;
   padding: 13px 10px;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.03);
 }
@@ -315,10 +315,19 @@ section {
 .for__background .form__container .left__side .left__side__form__container .left__side__form input:focus {
   background-color: #449edd;
 }
+.for__background .form__container .left__side .left__side__form__container .left__side__form input:nth-child(4):focus {
+  background-color: #005aab;
+}
 .for__background .form__container .left__side .left__side__form__container .left__side__form .submit__button {
   background-color: #005aab;
   border: 3px solid #e5e5e5;
   cursor: pointer;
+}
+.for__background .form__container .left__side .left__side__form__container .left__side__form ._error {
+  border: 2px solid rgb(179, 39, 39);
+}
+.for__background .form__container .left__side .left__side__form__container .left__side__form ._sending {
+  background-color: #03ab00;
 }
 .for__background .form__container .right__side {
   background-image: url("/src/small__img/logo__links/Запит-на-консультацію.jpg");
