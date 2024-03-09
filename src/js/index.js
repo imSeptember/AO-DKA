@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', formSend);
 
     function formSend() {
-        const userName = document.getElementById('username');
-        const phone = document.getElementById('telephone');
-        const email = document.getElementById('email');
+        const userName = document.getElementById('username').value;
+        const phone = document.getElementById('telephone').value;
+        const email = document.getElementById('email').value;
         let messageBody =
             'Name ' +
             userName +
