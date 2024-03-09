@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('form');
 
-    const submitButton = document.querySelector('.submit__button');
+    // const submitButton = document.querySelector('.submit__button');
     form.addEventListener('submit', formSend);
 
     function formSend() {
@@ -42,8 +42,14 @@ document.addEventListener('DOMContentLoaded', function () {
             From: 'kalenskiyvlad@gmail.com',
             Subject: 'Перезвонить клиенту',
             Body: messageBody,
-        }).then((message) => alert(message));
-        submitButton.classList.add('_sending');
+        }).then((message) => {
+            if (message == 'OK') {
+                swal('1', '2', '3');
+            } else {
+                swal('3', '2', '1');
+            }
+        });
+        // submitButton.classList.add('_sending');
         form.reset();
     }
 
