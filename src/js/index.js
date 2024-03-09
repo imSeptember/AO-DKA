@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
             Host: 'smtp.elasticemail.com',
             Username: 'kalenskiyvlad@gmail.com',
             Password: '76667601ECF56C5A07E797ABCE54D2D2637C',
-            To: 'kalenskiyvlad@gmail.com',
-            From: 'aodka@aodka.pp.ua',
+            To: 'kalensky_advokat@icloud.com',
+            From: 'kalenskiyvlad@gmail.com',
             Subject: 'Перезвонить клиенту',
             Body: messageBody,
         }).then((message) => alert(message));
