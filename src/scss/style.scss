@@ -303,6 +303,14 @@ section {
                 .left__side__form {
                     width: 100%;
                     max-width: 350px;
+                    &.form-disabled {
+                        input {
+                            &:not(.submit__button) {
+                                background-color: rgba(0, 0, 0, 0.1);
+                                cursor: not-allowed;
+                            }
+                        }
+                    }
                     input {
                         color: #fff;
                         margin-bottom: 20px;
@@ -331,9 +339,6 @@ section {
 
                     ._error {
                         border: 2px solid rgb(179, 39, 39);
-                    }
-                    ._sending {
-                        background-color: #03ab00;
                     }
                 }
             }

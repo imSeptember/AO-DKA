@@ -300,6 +300,10 @@ section {
   width: 100%;
   max-width: 350px;
 }
+.for__background .form__container .left__side .left__side__form__container .left__side__form.form-disabled input:not(.submit__button) {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
 .for__background .form__container .left__side .left__side__form__container .left__side__form input {
   color: #fff;
   margin-bottom: 20px;
@@ -325,9 +329,6 @@ section {
 }
 .for__background .form__container .left__side .left__side__form__container .left__side__form ._error {
   border: 2px solid rgb(179, 39, 39);
-}
-.for__background .form__container .left__side .left__side__form__container .left__side__form ._sending {
-  background-color: #03ab00;
 }
 .for__background .form__container .right__side {
   background-image: url("/src/small__img/logo__links/Запит-на-консультацію.jpg");

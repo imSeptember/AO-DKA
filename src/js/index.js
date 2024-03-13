@@ -20,14 +20,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const form = document.getElementById('form');
 
-    // const submitButton = document.querySelector('.submit__button');
+    const submitButton = document.querySelector('.submit__button');
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission behavior
+        event.preventDefault();
         formSend();
     });
-    // const userName = document.getElementById('username');
-    // const phone = document.getElementById('tel');
-    // const email = document.getElementById('email');
 
     function formSend() {
         let formData = new FormData(form);
@@ -46,26 +43,43 @@ document.addEventListener('DOMContentLoaded', function () {
             Body: messageBody,
         })
             .then((message) => {
-                alert('Email sent successfully');
-                console.log(message);
+                if (message === 'OK') {
+                    form.classList.add('form-disabled');
+                    Array.from(form.elements).forEach((element) => {
+                        if (
+                            element.tagName === 'INPUT' &&
+                            element.type !== 'submit'
+                        ) {
+                            element.disabled = true;
+                        }
+                    });
+                    submitButton.style.backgroundColor = '#03ab00';
+                    submitButton.value = 'ВІДПРАВЛЕНО!';
+                    submitButton.disabled = true;
+                    submitButton.style.border = '3px solid #03ab00';
+                    submitButton.style.cursor = 'default';
+
+                    setTimeout(() => {
+                        form.classList.remove('form-disabled');
+                        Array.from(form.elements).forEach((element) => {
+                            if (element.tagName === 'INPUT') {
+                                element.disabled = false;
+                            }
+                        });
+                        submitButton.style.backgroundColor = '#005aab';
+                        submitButton.value = 'ВІДПРАВИТИ';
+                        submitButton.disabled = false;
+                        submitButton.style.border = '3px solid #e5e5e5';
+                        submitButton.style.cursor = 'pointer';
+                    }, 5000);
+                }
             })
             .catch((error) => {
-                alert('Error sending email. Please try again later.');
+                alert(
+                    'Виникла помилка при відправці, спробуйте повторно та уважно заповніть поля'
+                );
                 console.error(error);
             });
-
-        // .then((message) => alert(message));
-
-        //     .then((message) => {
-        //     if (message == 'OK') {
-        //         swal('asdasd', 'fsdfghgh', 'wert');
-        //     } else {
-        //         swal('gsdfg', 'sdgfa', 'asdf');
-        //     }
-        // });
-        // .then((message) => alert(message));
-
-        // submitButton.classList.add('_sending');
         form.reset();
     }
 
