@@ -21,29 +21,40 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
 
     // const submitButton = document.querySelector('.submit__button');
-    form.addEventListener('submit', formSend);
-    const userName = document.getElementById('username');
-    const phone = document.getElementById('tel');
-    const email = document.getElementById('email');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        formSend();
+    });
+    // const userName = document.getElementById('username');
+    // const phone = document.getElementById('tel');
+    // const email = document.getElementById('email');
 
     function formSend() {
         let formData = new FormData(form);
         let messageBody =
-            'Name ' +
+            'Name: ' +
             formData.get('username') +
-            '<br/> Phone ' +
-            formData.get('tel') +
-            '<br/> Email ' +
+            '\nPhone: ' +
+            formData.get('telephone') +
+            '\nEmail: ' +
             formData.get('email');
         Email.send({
-            Host: 'smtp.elasticemail.com',
-            Username: 'kalenskiyvlad@gmail.com',
-            Password: '76667601ECF56C5A07E797ABCE54D2D2637C',
+            SecureToken: '7f4bbe8a-d5be-4fed-af63-d2dbcafd4570',
             To: 'kalensky_advokat@icloud.com',
             From: 'kalenskiyvlad@gmail.com',
             Subject: 'Перезвонить клиенту',
             Body: messageBody,
-        }).then((message) => alert(message));
+        })
+            .then((message) => {
+                alert('Email sent successfully');
+                console.log(message);
+            })
+            .catch((error) => {
+                alert('Error sending email. Please try again later.');
+                console.error(error);
+            });
+
+        // .then((message) => alert(message));
 
         //     .then((message) => {
         //     if (message == 'OK') {
