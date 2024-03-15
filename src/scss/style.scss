@@ -396,6 +396,7 @@ footer {
                 max-width: 1145px;
                 display: flex; // Add this to use flexbox
                 align-items: center;
+                padding-left: 40px;
                 h1 {
                     color: #fff;
                     margin: 0;
@@ -685,10 +686,13 @@ footer {
             }
         }
     }
-
-    .korisne__left__side {
-        ol {
-            padding-left: 20px;
+    .main__korisne {
+        padding-left: 5px;
+        padding-right: 5px;
+        .korisne__left__side {
+            ol {
+                padding-left: 20px;
+            }
         }
     }
 }
