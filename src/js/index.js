@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
             '\nEmail: ' +
             formData.get('email');
         Email.send({
-            SecureToken: '7f4bbe8a-d5be-4fed-af63-d2dbcafd4570',
+            // SecureToken: '7f4bbe8a-d5be-4fed-af63-d2dbcafd4570',
+            SecureToken: 'c78767f2-6446-4b0f-bd2c-1edb3406a340',
             To: 'kalensky_advokat@icloud.com',
             From: 'kalenskiyvlad@gmail.com',
             Subject: 'Перезвонить клиенту',
