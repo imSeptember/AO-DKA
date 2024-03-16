@@ -1,61 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://aodka.pp.ua/</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>1.00</priority>
+	<loc>https://aodka.pp.ua/</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/pravova</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/pravova</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/korusne</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/korusne</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/contacts</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/contacts</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/civil-law</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/civil-law</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/criminal-law</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/criminal-law</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/admin-law</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/admin-law</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/family-law</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/family-law</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/contracts</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/contracts</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-  <loc>https://aodka.pp.ua/house-law</loc>
-  <lastmod>2024-03-16T11:43:58+00:00</lastmod>
-  <priority>0.80</priority>
+	<loc>https://aodka.pp.ua/house-law</loc>
+	<lastmod>2024-03-16T13:53:26+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
-
-
 </urlset>
