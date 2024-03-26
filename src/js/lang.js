@@ -4,7 +4,7 @@ function loadContent(lang) {
     if (lang === 'ua') {
         location.href = '/index.html';
     } else {
-        location.href = '/en/index.html';
+        location.href = '/en/';
     }
 }
 
