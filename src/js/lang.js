@@ -2,7 +2,7 @@ const select = document.querySelector('select');
 
 function loadContent(lang) {
     if (lang === 'ua') {
-        location.href = '/ua/index.html';
+        location.href = '/index.html';
     } else {
         location.href = '/en/index.html';
     }
