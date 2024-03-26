@@ -57,7 +57,10 @@ ul li {
   display: flex;
   align-items: center;
 }
-.header .header__contacts__wrapper .header__contacts img {
+.header .header__contacts__wrapper .header__contacts .change-lang {
+  border-radius: 10px;
+}
+.header .header__contacts__wrapper .header__contacts a img {
   max-height: 24px;
 }
 .header .header__contacts__wrapper .header__contacts p {

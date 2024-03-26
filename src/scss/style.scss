@@ -57,7 +57,10 @@ ul {
         .header__contacts {
             display: flex;
             align-items: center;
-            img {
+            .change-lang {
+                border-radius: 10px;
+            }
+            a img {
                 max-height: 24px;
             }
             p {
