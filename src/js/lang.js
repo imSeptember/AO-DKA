@@ -1,7 +1,7 @@
 const select = document.querySelector('select');
 
 function loadContent(lang) {
-    if (lang === 'uk') {
+    if (lang === 'ua') {
         location.href = '/index.html';
     } else {
         location.href = '/en/';
