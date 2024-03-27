@@ -58,6 +58,8 @@ ul li {
   align-items: center;
 }
 .header .header__contacts__wrapper .header__contacts .change-lang {
+  background-color: #232323;
+  color: #ffffff;
   border-radius: 10px;
 }
 .header .header__contacts__wrapper .header__contacts a img {
